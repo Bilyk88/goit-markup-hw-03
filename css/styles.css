@@ -4,17 +4,62 @@
     --secondary-text-color: #757575;
 
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
 }
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
 .link {
     text-decoration: none;
 }
+
 .list {
     list-style: none;
 }
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-list {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
+    margin-right: 92px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -22,9 +67,15 @@ body {
     letter-spacing: 0.03em;
     color: #000000;      
 }
+
 .logo-accent {
     color: var(--accent-color);
 }
+
+.nav-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .nav-link {
     font-weight: 500;
     font-size: 14px;
@@ -32,27 +83,41 @@ body {
     letter-spacing: 0.02em;
     color: inherit;
 }
+
 .nav-link:hover,
 .nav-link:focus {
     color: var(--accent-color);
 }
+
 .current-page {
     color: var(--accent-color);
 }
-.contacts-list-item{
+
+.contacts-list {
+    margin-left: auto;
+}
+
+.contacts-list-item:first-child {
+    margin-right: 50px;
+}
+
+.contacts-list-link{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
 }
-.contacts-list-item:hover,
-.contacts-list-item:focus {
+
+.contacts-list-link:hover,
+.contacts-list-link:focus {
     color: var(--accent-color);
 }
+
 .hero {
     background: #2F303A;;
 }
+
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -62,6 +127,7 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
 .main-btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -75,10 +141,12 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
+
 .main-btn:hover,
 .main-btn:focus{
     background-color: #188CE8;
 }
+
 .advantages-subtitle {
     font-weight: 700;
     font-size: 14px;
@@ -86,15 +154,18 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+
 .advantages-description {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
+
 .team {
     background-color: #F5F4FA;;
 }
+
 .subtitle {
     font-weight: 700;
     font-size: 36px;
@@ -102,6 +173,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 }
+
 .team-list-item {
     width: 270px;
     height: 368px;
@@ -109,6 +181,7 @@ body {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+
 .team-list-title {
     font-weight: 500;
     font-size: 16px;
@@ -116,6 +189,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 }
+
 .team-list-description {
     font-size: 16px;
     line-height: 1.19;
@@ -123,12 +197,15 @@ body {
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
+
 .footer {
     background: #2F303A;
 }
+
 .footer-logo {
     color: #FFFFFF;
 }
+
 .footer-address {
     font-style: normal;
     font-weight: 400;
@@ -137,10 +214,12 @@ body {
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
+
 .footer-address:hover,
 .footer-address:focus {
     color: var(--accent-color);
 }
+
 .address-list-item {
     font-style: normal;
     font-size: 14px;
@@ -148,10 +227,12 @@ body {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+
 .address-list-item:hover,
 .address-list-item:focus {
     color: var(--accent-color);
 }
+
 .portfolio-btn {
     font-family: 'Roboto';
     font-weight: 500;
@@ -163,6 +244,7 @@ body {
     background-color: #F5F4FA;
     border-radius: 4px;
 }
+
 .portfolio-btn:hover,
 .portfolio-btn:focus {
     color: #FFFFFF;
@@ -170,12 +252,14 @@ body {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     cursor: pointer;
 }
+
 .portfolio-list-item {
     width: 370px;
     height: 404px;
     background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
 }
+
 .portfolio-subtitle {
     font-weight: 700;
     font-size: 18px;
@@ -183,9 +267,11 @@ body {
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
 }
+
 .portfolio-description {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
+
