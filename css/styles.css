@@ -44,9 +44,6 @@ img {
 .header {
     padding-top: 32px;
     padding-bottom: 32px;
-}
-
-.header-border {
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -163,7 +160,7 @@ img {
     background-color: #188CE8;
 }
 
-.advantages {
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -203,8 +200,6 @@ img {
 }
 
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: #F5F4FA;;
 }
 
@@ -293,11 +288,6 @@ img {
 .address-list-link:hover,
 .address-list-link:focus {
     color: var(--accent-color);
-}
-
-.portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .button-list {
